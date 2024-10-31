@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .star-div i{
+        @apply text-base text-amber-400 md:text-xl lg:text-2xl xl:text-3xl
+    }
+    .btn button{
+        @apply px-4 py-2 rounded-sm cursor-pointer lg:py-4
+    }
+    
+}

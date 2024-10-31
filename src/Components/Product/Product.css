@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer Components{
+
+
+    .linklist li{
+        @apply text-base font-bold hover:text-sky-500 sm:mb-4 md:text-2xl lg:text-3xl xl:text-4xl
+    }
+    
+    
+}
+.custom-arrow,.customprev-arrow {
+    display: block;
+ /* font-size: 20px; Default font size */
+   
+    background: black;
+    border-radius: 50%;
+    top: 70px;
+   
+    z-index: 10;
+    
+  }
+  .custom-arrow{
+       right: 15px; 
+  }
+  .customprev-arrow{
+      left: 15px;
+  }
+  @media (max-width: 1610px) {
+    .custom-arrow,.customprev-arrow {
+      font-size: 45px !important;
+      top:250px;
+     width: 20px;
+      /* Medium screen size */
+    }
+    .custom-arrow{
+         right: 25px;
+    }
+    .customprev-arrow{
+        left: 20px;
+    }
+  }
+
+  @media (max-width: 1270px) {
+    .custom-arrow,.customprev-arrow {
+      font-size: 35px !important;
+      top:220px;
+     
+      /* Medium screen size */
+    }
+    
+  }
+  
+  @media (max-width: 1010px) {
+    .custom-arrow,.customprev-arrow {
+      font-size: 25px !important;
+      top:180px;
+     
+      /* Medium screen size */
+    }
+    .custom-arrow{
+         right: 25px;
+    }
+    .customprev-arrow{
+        left: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .custom-arrow,.customprev-arrow {
+      font-size: 19px;
+      top: 140px;
+      /* Small screen size */
+    }
+    .custom-arrow{
+         right: 20px;
+    }
+    .customprev-arrow{
+        left: 20px;
+    }
+  }

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .input{
+        @apply border-b-2 border-black  mb-4 w-full  pl-2 md:mb-6 lg:mb-8 xl:mb-12
+    }
+    .info{
+        @apply flex gap-2 pl-8 mb-2 text-lg md:text-2xl md:pl-20 lg:text-3xl lg:mb-4 xl:text-4xl xl:pl-32
+    }
+    .info h3{
+        @apply font-bold  tracking-wider
+    }
+    
+    
+}
