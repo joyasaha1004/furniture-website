@@ -2,7 +2,7 @@ import React from 'react';
 import "./Hero_Section.css";
 import heroBg from "../Assets/hero_bg1.png";
 import {useGSAP} from "@gsap/react" ;
-import gsap from "gsap";
+import {gsap} from "gsap";
 import chair_img1 from "../Assets/chair1.png";
 import lamp_img1 from "../Assets/lamp-img1.png";
 import sofa_img1 from "../Assets/sofa-img1.png";
@@ -36,20 +36,7 @@ const Hero_Section = () => {
 
     })}
     })
-  // gsap.to(".moving h1",{
-
-  //   transform:"translateX(-100%)",
-
-  //   scrollTrigger:{
-  //     trigger:".moving",
-  //     scroller:"body",
-  //     markers:"true",
-  //     start:"top 20%",
-  //     end:"top -120%",
-  //     scrub:2,
-  //     pin:true
-  //   }
-  // })
+ 
    
   })
 
