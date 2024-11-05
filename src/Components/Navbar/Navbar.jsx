@@ -67,7 +67,7 @@ const Navbar = () => {
 
                <div className=" lg:ml-52 xl:ml-[350px] lg:pt-1 xl:pt-1 xxl:ml-[400px]">
                    <ul className="text-stone flex invisible lg:visible  md:text-lg md:gap-16 menu lg:text-2xl xl:text-2xl xl:gap-20 ">
-                       <li className="active:text-black"><Link to="/" > Home</Link></li>
+                       <li className="active:text-black"><Link to="/home" > Home</Link></li>
                        <li><Link to="/gallery">Gallery</Link></li>
                        <li><Link to="/shop">Shop</Link></li>
                        <li><Link to="/contact">Contact Us</Link></li>
