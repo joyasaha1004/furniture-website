@@ -68,9 +68,10 @@ const Hero_Section = () => {
         scrollTrigger: {
           trigger: ".moving",  // Element that triggers the scroll
           start: "top center", // Start when the element is at the center of the viewport
-          end: "bottom top",   // End when the element scrolls out of view
+          end: "top -120%",   // End when the element scrolls out of view
           scrub: 1,            // Smoothly connects animation to scroll position
-          markers: true,      // Set to true to see the start/end markers for debugging
+          markers: false,
+          pin:true,      // Set to true to see the start/end markers for debugging
         },
       });
     }, []);
