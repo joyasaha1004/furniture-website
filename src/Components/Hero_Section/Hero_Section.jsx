@@ -65,13 +65,13 @@ const Hero_Section = () => {
         x: "-200%", // Adjust the distance as needed
         duration: 5, // The duration of the animation
         ease: "none",
-        // scrollTrigger: {
-        //   trigger: ".moving",  // Element that triggers the scroll
-        //   start: "top center", // Start when the element is at the center of the viewport
-        //   end: "bottom top",   // End when the element scrolls out of view
-        //   scrub: 1,            // Smoothly connects animation to scroll position
-        //   markers: false,      // Set to true to see the start/end markers for debugging
-        // },
+        scrollTrigger: {
+          trigger: ".moving",  // Element that triggers the scroll
+          start: "top center", // Start when the element is at the center of the viewport
+          end: "bottom top",   // End when the element scrolls out of view
+          scrub: 1,            // Smoothly connects animation to scroll position
+          markers: true,      // Set to true to see the start/end markers for debugging
+        },
       });
     }, []);
   
