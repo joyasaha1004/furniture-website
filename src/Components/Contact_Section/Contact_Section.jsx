@@ -38,10 +38,10 @@ const Contact_Section = () => {
 </div>
 
 
-<div className="px-4 mt-12 sm:px-2 md:mt-20 md:px-4 lg:mt-28 xl:mt-36">
-  <div className=" text-center bg-sky-800 w-full px-4 py-4 text-white text-sm rounded-lg  md:flex  sm:grid grid-cols-3 sm:gap-3 md:text-base md:py-6 md:gap-8 lg:text-xl lg:py-8 xl:text-2xl xl:py-10   ">
+<div className="px-4 mt-12 sm:px-2 md:mt-20  lg:mt-28 xl:mt-36">
+  <div className=" text-center bg-sky-800 w-full px-4 py-4 text-white text-sm rounded-lg  md:flex  sm:grid grid-cols-2  md:text-base md:py-6 md:gap-8  lg:text-xl lg:py-8 xl:text-2xl xl:py-10   ">
 
-      <div className="mb-4 sm:-ml-10 md:ml-1">
+      <div className="mb-6 md:-ml-5 xl:-ml-3">
           <div className="info">
       <i class="ri-phone-fill"></i>
       <h3>CALL US</h3>
@@ -53,21 +53,21 @@ const Contact_Section = () => {
       </div>
       </div>
 
-      <div className="mb-4 sm:-ml-10  md:mx-5 lg:px-7 xl:px-5 xxl:px-20">
-          <div className="info lg:pl-12 xxl:pl-24">
+      <div className="mb-6  sm:mx-2 md:mx-5 lg:px-7 xl:px-5 xxl:px-20">
+          <div className="info md:pl-10 lg:pl-16 xxl:pl-28">
       <i class="ri-map-pin-line"></i>
       <h3>LOCATION</h3>
       </div> 
       <div>
-          <span className="sm:mx-3 leading-relaxed ">121 ROCK Street,21 Avenue,New York NY 0015-2156</span>
+          <span className=" leading-relaxed ">121 ROCK Street,21 Avenue,New York NY 0015-2156</span>
           
       </div>
       </div>
 
 
 
- <div className="mb-4">
-     <div className="info xl:ml-16">
+ <div className="mb-6 sm:mx-2">
+     <div className="info lg:pl-12 xl:ml-16">
  <i class="ri-calendar-schedule-fill"></i>
       <h3>HOURS</h3>
       </div> 
