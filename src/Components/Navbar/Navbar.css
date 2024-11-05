@@ -5,7 +5,7 @@
 @layer components{
 
     .first-nav i{
-        @apply cursor-pointer dark:text-white text-[22px] sm:text-[28px] -mt-1 sm:-mt-2 lg:text-[32px] xl:text-[45px] 
+        @apply cursor-pointer dark:text-white text-[22px] sm:text-[28px] -mt-1 sm:-mt-2 lg:text-[35px] xl:text-[45px] 
     }
     .full li{
         @apply cursor-pointer py-2 hover:bg-sky-200 hover:text-white dark:hover:bg-sky-500

@@ -413,6 +413,7 @@ const Product = () => {
     const setter = {
       dots: true,
       infinite: true,
+      arrow:false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -495,25 +496,25 @@ const CustomNextArrow = (props) => {
 
          
           {
-            breakpoint: 1270,
+            breakpoint: 1280,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-                 //centerPadding: "20px",
+                 centerPadding: "0px",
             }
           },
         
          
+          // {
+          //   breakpoint: 1009,
+          //   settings: {
+          //     slidesToShow: 3,
+          //     slidesToScroll: 1,
+          //     //  centerPadding: "60px",
+          //   }
+          // },
           {
-            breakpoint: 1009,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              //  centerPadding: "60px",
-            }
-          },
-          {
-            breakpoint: 599,
+            breakpoint: 999,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -533,15 +534,15 @@ const CustomNextArrow = (props) => {
     }
      
     return (
-        <div className="w-[300px] font-sans dark:bg-gray-900 dark:text-white pb-10 sm:pb-16 sm:w-[600px] sm:-mt-10 md:pb-32 md:w-[1010px] lg:w-[1270px] xl:w-[1510px] overflow-x-hidden">
+        <div className="w-[300px] font-sans dark:bg-gray-900 dark:text-white pb-10 sm:pb-16 sm:w-[500px] sm:-mt-10 md:pb-32 md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1510px] overflow-x-hidden">
              <div>
 
-<div className="header -left-8 sm:-left-40 md:-left-80 lg:-left-[420px] xl:-left-[480px]">
+<div className="header -left-8 sm:-left-32 md:-left-44 lg:-left-[300px] xl:-left-[380px] xxl:-left-[490px]">
 <h1>Our<span className=""> Products</span></h1>
 </div>
 
-<div className=" relative mt-12 px-4 mb-4  lg:px-7 md:mt-20 lg:-ml-8">
-       <ul className=" linklist grid grid-cols-2 gap-4 flex-wrap text-center sm:grid-cols-4 lg:grid-cols-6 lg:gap-2">
+<div className=" relative mt-12 px-4 mb-4  lg:px-7 md:mt-20 lg:-ml-8 xl:px-12 xxl:-ml-12">
+       <ul className=" linklist grid grid-cols-2 gap-4 flex-wrap text-center sm:grid-cols-4  xl:grid-cols-5 lg:gap-2 xxl:grid-cols-6">
 
 
            <li onClick={() => handleListItemClick(0)}>Lamp</li>
@@ -562,11 +563,11 @@ const CustomNextArrow = (props) => {
   {LampList.map((data)=>(
       
 
-  <div className=" px-8  py-5 hover:transition duration-700 hover:scale-105">
-    <img src={data.img} alt=""  className="w-[250px] h-64 md:h-[350px] md:w-[300px] lg:w-[320px] lg:h-[450px] xl:w-[400px] xl:h-[480px]"/>
+  <div className=" px-8  py-5 hover:transition duration-700 sm:px-6 hover:scale-105 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
 
-    <div className="mt-6 text-center relative xl:-ml-2">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
+    <div className=" mt-6 text-center relative xl:-ml-2">
+  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-2xl ">{data.name}</h3>
   <span className="text-sm text-gray-400 font-bold md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
     </div>
 
@@ -582,8 +583,8 @@ const CustomNextArrow = (props) => {
   {ChairList.map((data)=>(
       
 
-  <div className="  px-8 hover:transition duration-700 hover:scale-105">
-    <img src={data.img} alt=""  className="w-[250px] h-64 md:h-[350px] md:w-[260px] lg:w-[370px] lg:h-[450px] xl:w-[400px] xl:h-[480px]"/>
+  <div className="products  px-8 hover:transition duration-700 hover:scale-105">
+    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
 
     <div className="mt-6 text-center relative ">
   <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
@@ -603,8 +604,8 @@ const CustomNextArrow = (props) => {
   {DecorList.map((data)=>(
       
 
-  <div className=" px-8 hover:transition duration-700 hover:scale-105">
-    <img src={data.img} alt=""  className="w-[250px] h-64 md:h-[350px] md:w-[260px] lg:w-[370px] lg:h-[450px] xl:w-[400px] xl:h-[480px] "/>
+  <div className="products px-8 hover:transition duration-700 hover:scale-105">
+    <img src={data.img} alt=""  className=" w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
 
     <div className="mt-6 text-center relative ">
   <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
@@ -623,8 +624,8 @@ const CustomNextArrow = (props) => {
   {SofaList.map((data)=>(
       
 
-  <div className=" px-8 hover:transition duration-700 hover:scale-105">
-    <img src={data.img} alt=""  className="w-[250px] h-64 md:h-[350px] md:w-[260px] lg:w-[370px] lg:h-[450px] xl:w-[400px] xl:h-[480px]"/>
+  <div className="products px-8 hover:transition duration-700 hover:scale-105">
+    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
 
     <div className="mt-6 text-center relative ">
   <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
@@ -643,8 +644,8 @@ const CustomNextArrow = (props) => {
   {ShelfList.map((data)=>(
       
 
-  <div className=" px-8 hover:transition duration-700 hover:scale-105">
-    <img src={data.img} alt=""  className="w-[250px] h-64 md:h-[350px] md:w-[260px] lg:w-[370px] lg:h-[450px] xl:w-[400px] xl:h-[480px]"/>
+  <div className="products px-8 hover:transition duration-700 hover:scale-105">
+    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
 
     <div className="mt-6 text-center relative ">
   <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
@@ -664,8 +665,8 @@ const CustomNextArrow = (props) => {
   {TableList.map((data)=>(
       
 
-  <div className=" px-8 hover:transition duration-700 hover:scale-105">
-    <img src={data.img} alt="" className="w-[250px] h-64 md:h-[350px] md:w-[260px] lg:w-[370px] lg:h-[450px] xl:w-[400px] xl:h-[480px]"/>
+  <div className="products px-8 hover:transition duration-700 hover:scale-105">
+    <img src={data.img} alt="" className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
 
     <div className="mt-6 text-center relative lg:mt-8">
   <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="w-[300px] bg-gray-900  dark:bg-black sm:w-[600px] md:w-[1010px] lg:w-[1270px] pb-2 xl:w-[1510px] xl:pb-4">
+        <div className="w-[300px] bg-gray-900  dark:bg-black sm:w-[500px] md:w-[700px] lg:w-[1000px] pb-2 xl:w-[1280px] xl:pb-4 xxl:w-[1510px] overflow-x-hidden">
 
-                 <div className="sm:flex">
+                 <div className="md:flex">
             <div className="px-3 text-white text-sm py-3 leading-loose sm:px-4 md:text-lg md:py-7 md:px-6 lg:text-xl xl:text-2xl lg:px-10">
             <div className="">
 
@@ -23,8 +23,8 @@ const Footer = () => {
             <span>joyasaha440@gmail.com</span>
             </div>
             </div>
-   <div className="md:ml-36 md:mt-5 lg:ml-60 xl:mt-10 ">
-            <div className="px-12 flex mt-2 sm:h-7 sm:mt-24 md:h-9 xl:h-12">
+   <div className="sm:ml-60 md:mt-5 md:-ml-24 lg:ml-8 xl:mt-10 xl:ml-20 xxl:ml-64">
+            <div className="px-12 flex mt-2 sm:h-7 sm:-mt-6 md:h-9 md:mt-44 xl:h-12">
                 <input type="text" className="text-xs w-48 px-8 sm:w-52 md:w-72 md:text-base lg:text-lg lg:w-80 xl:w-96 xl:text-xl " placeholder="Search"></input>
                 <i class="ri-search-line  text-white bg-black px-2 -ml-8 md:text-lg md:py-1 md:-ml-[34px] lg:text-xl  dark:bg-gray-800 lg:-ml-[36px] xl:text-2xl xl:px-3 xl:-ml-[48px] xl:py-2"></i>
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                 </div></div>
 </div>
                 <hr></hr>
-                <span className="text-[10px] relative mb-2 mx-12 text-gray-400 sm:text-[11px] sm:mb-4 sm:ml-48 md:text-[12px] md:mb-8 md:ml-96 md:top-1 xl:top-2 lg:text-[14px] lg:ml-[500px] xl:text-[19px] xl:ml-[570px]  xxl:text-[18px] 
+                <span className="text-[10px] relative mb-2 mx-12 text-gray-400 sm:text-[11px] sm:mb-4 sm:ml-36 md:text-[12px] md:mb-8 md:ml-56 md:top-1 xl:top-2 lg:text-[16px] lg:ml-[340px] xl:text-[19px] xl:ml-[450px]  xxl:text-[20px] xxl:ml-[540px] 
                    ">Copyright @joya saha 2020.All right reserved</span>
         </div>
     );

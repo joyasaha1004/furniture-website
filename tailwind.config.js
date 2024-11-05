@@ -9,11 +9,10 @@ export default {
     
     screens: {
       sm: '300px',
-      md: '600px',
-      lg: '1010px',
-      xl: '1270px',
-      // xxl: '1510px',
-       
+      md: '500px',
+      lg: '700px',
+      xl: '1000px',
+      xxl: '1280px',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],

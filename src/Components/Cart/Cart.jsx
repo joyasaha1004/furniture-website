@@ -140,7 +140,7 @@ function Cart() {
             }
           },
           {
-            breakpoint: 599,
+            breakpoint: 699,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -162,23 +162,23 @@ function Cart() {
 
 
   return (
-    <div className="w-[300px] -mt-40 pb-60 overflow-x-hidden dark:bg-gray-900 sm:w-[600px]
-    md:w-[1010px] lg:w-[1270px] xl:w-[1510px] sm:pb-64 md:pb-[350px] md:-mt-32 lg:-mt-12 xl:pb-[400px]">
+    <div className="w-[300px] -mt-40 pb-60 overflow-x-hidden dark:bg-gray-900 sm:w-[500px]
+    md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1510px] sm:pb-64 md:pb-[350px] md:-mt-32 lg:-mt-12 xl:pb-[400px]">
 
-      <div className="sm:grid grid-cols-2 md:gap-8 md:px-4 xl:gap-10">
+      <div className="lg:grid grid-cols-2  md:px-4 xl:gap-10">
 
         <div>
-      <div className="main-slider px-4 relative  mt-8 sm:px-2 ">
+      <div className="main-slider px-4 relative  mt-8 sm:px-16 md:px-24 lg:px-5">
         <Slider {...mainSliderSettings}>
           {images.map((image, index) => (
             <div key={index}>
-              <img src={image} alt={`Slide ${index + 1}`} style={{ width: "100%" }} className="md:h-[400px] lg:h-[500px] xl:h-[600px]"/>
+              <img src={image} alt={`Slide ${index + 1}`} style={{ width: "100%" }} className="w-full md:h-[400px] lg:h-[500px] xl:h-[600px]"/>
             </div>
           ))}
         </Slider>
       </div>
 
-      <div className="thumbnail-slider relative right-3 mt-4 px-10 md:px-16 lg:px-24">
+      <div className="thumbnail-slider relative right-3 mt-4 px-10 sm:px-32 md:px-48 lg:px-24">
         <Slider {...thumbSliderSettings} className="">
           {images.map((image, index) => (
             <div key={index} className="">
@@ -188,10 +188,10 @@ function Cart() {
         </Slider>
       </div>
 </div>
-      <div className="px-3 mt-6 dark:text-white md:mt-8">
+      <div className="px-3 mt-6 dark:text-white sm:mt-8 sm:px-6 md:mt-10">
 
         <div>
-          <h3 className="text-2xl font-bold mb-3 sm:text-3xl md:text-4xl md:mb-5 lg:text-6xl xl:mb-8">Meryi Lounge Chair</h3>
+          <h3 className="text-2xl font-bold mb-3 sm:text-3xl md:text-4xl md:mb-5 lg:text-5xl xl:mb-8 xl:text-6xl">Meryi Lounge Chair</h3>
           <span className="text-base text-sky-800 md:text-xl lg:text-2xl xl:text-3xl ">$87.96</span>
           <div className="star-div">
           <i class="ri-star-s-fill"></i>
@@ -217,7 +217,7 @@ function Cart() {
 
       {/* customer review */}
 
-    <div className="relative top-32 xl:top-48">
+    <div className="relative top-32 lg:top-48">
       <div>
       <div className="header ">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Customer<span className=""> Review</span></h1>
@@ -229,7 +229,7 @@ function Cart() {
         {...settings} className="mx-10 sm:gap-20">
      {CustomerList.map((data)=>(
 
-       <div className="px-4 py-4 bg-gray-600 drop-shadow-lg h-60 text-sm rounded-lg md:text-lg md:h-72 lg:text-xl lg:h-80 xl:text-2xl xl:h-[400px] xl:px-6">
+       <div className="px-4 py-4 bg-gray-600 drop-shadow-lg h-64 text-sm rounded-lg md:text-lg md:h-[280px] lg:text-xl lg:h-80 xl:text-2xl xl:h-[400px] xl:px-6">
          
          
            <img src={data.img} alt="" className="w-12 h-12 rounded-full lg:w-16 lg:h-16 xl:w-20 xl:h-20"/>
@@ -237,7 +237,7 @@ function Cart() {
          <div className="mt-6 text-white xl:mt-8">
      <p className="leading-relaxed xl:leading-loose">"{data.para}"</p>
 
-     <div className="mt-6 text-sky-800 font-bold">
+     <div className="absolute bottom-2 left-3 text-sky-800 font-bold">
        <span>{data.name}</span>
 
        <div className="star-div">

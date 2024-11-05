@@ -6,10 +6,9 @@
 
 
     .linklist li{
-        @apply text-base font-bold hover:text-sky-500 sm:mb-4 md:text-2xl lg:text-3xl xl:text-4xl
+        @apply text-base font-bold hover:text-sky-500 sm:mb-4 md:text-xl  lg:text-3xl lg:mb-8 xl:text-4xl xl:mb-12
     }
-    
-    
+   
 }
 .custom-arrow,.customprev-arrow {
     display: block;
@@ -36,10 +35,10 @@
       /* Medium screen size */
     }
     .custom-arrow{
-         right: 25px;
+         right: 30px;
     }
     .customprev-arrow{
-        left: 20px;
+        left: 25px;
     }
   }
 
@@ -53,10 +52,10 @@
     
   }
   
-  @media (max-width: 1010px) {
+  @media (max-width: 1000px) {
     .custom-arrow,.customprev-arrow {
       font-size: 25px !important;
-      top:180px;
+      top:250px;
      
       /* Medium screen size */
     }
