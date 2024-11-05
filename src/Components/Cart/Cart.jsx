@@ -168,7 +168,7 @@ function Cart() {
       <div className="lg:grid grid-cols-2  md:px-4 xl:gap-10">
 
         <div>
-      <div className="main-slider px-4 relative  mt-8 sm:px-16 md:px-24 lg:px-5">
+      <div className="main-slider px-4 relative  mt-8 sm:px-10 md:px-16 lg:px-5">
         <Slider {...mainSliderSettings}>
           {images.map((image, index) => (
             <div key={index}>
@@ -178,7 +178,7 @@ function Cart() {
         </Slider>
       </div>
 
-      <div className="thumbnail-slider relative right-3 mt-4 px-10 sm:px-32 md:px-48 lg:px-24">
+      <div className="thumbnail-slider relative right-3 mt-4 px-10 sm:px-28 md:px-44 lg:px-24">
         <Slider {...thumbSliderSettings} className="">
           {images.map((image, index) => (
             <div key={index} className="">
@@ -206,9 +206,8 @@ function Cart() {
       <p className="leading-loose">Livin Modern Fabric Large Lazy Chair, Accent Oversized Comfy Reading Chair, Thick Padded Cozy Lounge Chair with Armrest, Steel Frame Leisure Sofa Chair for Living Room, Bedroom, Dorm, Black</p>
 
       <div className="btn gap-2 mt-8 grid lg:mt-12">
-        <button className="bg-sky-800 text-white hover:text-sky-800 hover:border-2
-      hover:border-sky-800 hover:bg-transparent">Add To Cart</button>
-        <button className="text-sky-800 border-2 border-sky-800 hover:bg-sky-800 hover:text-white">Buy Now</button>
+        <button className="bg-sky-800 text-white ">Add To Cart</button>
+        <button className="text-sky-800 border-2 border-sky-800 ">Buy Now</button>
       </div>
     </div>
 </div>

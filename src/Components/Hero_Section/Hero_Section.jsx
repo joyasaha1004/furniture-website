@@ -1,8 +1,9 @@
 import React from 'react';
 import "./Hero_Section.css";
 import heroBg from "../Assets/hero_bg1.png";
-import {useGSAP} from "@gsap/react" ;
-import {gsap} from "gsap";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import chair_img1 from "../Assets/chair1.png";
 import lamp_img1 from "../Assets/lamp-img1.png";
 import sofa_img1 from "../Assets/sofa-img1.png";
@@ -10,35 +11,57 @@ import story_img from "../Assets/story-img2.png";
 
 const Hero_Section = () => {
 
-  useGSAP(()=>{
+  useEffect(() => {
+    const handleWheel = (dets) => {
+      if (dets.deltaY > 0) {
+        gsap.to(".moving", {
+          transform: "translateX(-200%)",
+          repeat: -1,
+          duration: 5,
+          ease: "none",
+        });
+      } else {
+        gsap.to(".moving", {
+          transform: "translateX(0%)",
+          repeat: -1,
+          duration: 5,
+          ease: "none",
+        });
+      }
+    };
 
-   window.addEventListener("wheel", function(dets){
-  //     console.log("hey")
+    const handleTouchMove = (event) => {
+      // Implement similar logic for touch events here
+      const touchY = event.touches[0].clientY;
+      if (touchY > 0) {
+        // Handle scrolling down
+        gsap.to(".moving", {
+          transform: "translateX(-200%)",
+          repeat: -1,
+          duration: 5,
+          ease: "none",
+        });
+      } else {
+        // Handle scrolling up
+        gsap.to(".moving", {
+          transform: "translateX(0%)",
+          repeat: -1,
+          duration: 5,
+          ease: "none",
+        });
+      }
+    };
 
-    if(dets.deltaY>0){
+    window.addEventListener("wheel", handleWheel);
+    window.addEventListener("touchmove", handleTouchMove);
 
-      gsap.to(".moving",{
-        transform:"translateX(-200%)",
-        repeat:-1,
-       
-        duration:5,
-        ease:"none",
-       
-      })}
-      else{
-     
-    gsap.to(".moving ",{
-      transform:"translateX(0%)",
-      repeat:-1,
-     
-      duration:5,
-      ease:"none"
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
 
-    })}
-    })
- 
-   
-  })
+  
 
 
 
