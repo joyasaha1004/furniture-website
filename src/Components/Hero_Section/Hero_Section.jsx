@@ -29,38 +29,51 @@ const Hero_Section = () => {
         });
       }
     };
-
-    const handleTouchMove = (event) => {
-      // Implement similar logic for touch events here
-      const touchY = event.touches[0].clientY;
-      if (touchY > 0) {
-        // Handle scrolling down
-        gsap.to(".moving", {
-          transform: "translateX(-200%)",
-          repeat: -1,
-          duration: 5,
-          ease: "none",
-        });
-      } else {
-        // Handle scrolling up
-        gsap.to(".moving", {
-          transform: "translateX(0%)",
-          repeat: -1,
-          duration: 5,
-          ease: "none",
-        });
-      }
-    };
+   
+  //   const handleTouchMove = (event) => {
+  //     // Implement similar logic for touch events here
+  //     const touchY = event.touches[0].clientY;
+  //     if (touchY > 0) {
+  //       // Handle scrolling down
+  //       gsap.to(".moving", {
+  //         transform: "translateX(-200%)",
+  //         repeat: -1,
+  //         duration: 5,
+  //         ease: "none",
+  //       });
+  //     } else {
+  //       // Handle scrolling up
+  //       gsap.to(".moving", {
+  //         transform: "translateX(0%)",
+  //         repeat: -1,
+  //         duration: 5,
+  //         ease: "none",
+  //       });
+  //     }
+  //   };
 
     window.addEventListener("wheel", handleWheel);
-    window.addEventListener("touchmove", handleTouchMove);
+  //   window.addEventListener("touchmove", handleTouchMove);
 
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-      window.removeEventListener("touchmove", handleTouchMove);
+     return () => {
+       window.removeEventListener("wheel", handleWheel);
+  //     window.removeEventListener("touchmove", handleTouchMove);
     };
-  }, []);
-
+   }, []);
+   useEffect(() => {
+      gsap.to(".moving", {
+        x: "-200%", // Adjust the distance as needed
+        duration: 5, // The duration of the animation
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".moving",  // Element that triggers the scroll
+          start: "top center", // Start when the element is at the center of the viewport
+          end: "bottom top",   // End when the element scrolls out of view
+          scrub: 1,            // Smoothly connects animation to scroll position
+          markers: false,      // Set to true to see the start/end markers for debugging
+        },
+      });
+    }, []);
   
 
 
