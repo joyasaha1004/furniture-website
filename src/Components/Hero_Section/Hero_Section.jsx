@@ -44,7 +44,7 @@ const Hero_Section = () => {
       } else {
         // Handle scrolling up
         gsap.to(".moving", {
-          transform: "translateX(0%)",
+          transform: "translateX(200%)",
           repeat: -1,
           duration: 5,
           ease: "none",
