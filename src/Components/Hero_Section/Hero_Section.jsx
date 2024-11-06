@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Hero_Section.css";
 import heroBg from "../Assets/hero_bg1.png";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import chair_img1 from "../Assets/chair1.png";
@@ -11,69 +11,58 @@ import story_img from "../Assets/story-img2.png";
 
 const Hero_Section = () => {
 
+  const [isAnimating, setIsAnimating] = useState(false);
+
   useEffect(() => {
-    const handleWheel = (dets) => {
-      if (dets.deltaY > 0) {
+    const animateTo = (direction) => {
+      // Prevent repeated animations by setting isAnimating
+      if (!isAnimating) {
+        setIsAnimating(true);
         gsap.to(".moving", {
-          transform: "translateX(-200%)",
+          x: direction === "left" ? "-200%" : "0%",
           repeat: -1,
           duration: 5,
           ease: "none",
-        });
-      } else {
-        gsap.to(".moving", {
-          transform: "translateX(0%)",
-          repeat: -1,
-          duration: 5,
-          ease: "none",
+          onComplete: () => setIsAnimating(false),
         });
       }
     };
-   
-    // const handleTouchMove = (event) => {
-    //   // Implement similar logic for touch events here
-    //   const touchY = event.touches[0].clientY;
-    //   if (touchY > 0) {
-    //     // Handle scrolling down
-    //     gsap.to(".moving", {
-    //       transform: "translateX(-200%)",
-    //       repeat: -1,
-    //       duration: 5,
-    //       ease: "none",
-    //     });
-    //   } else {
-    //     // Handle scrolling up
-    //     gsap.to(".moving", {
-    //       transform: "translateX(200%)",
-    //       repeat: -1,
-    //       duration: 5,
-    //       ease: "none",
-    //     });
-    //   }
-    // };
+
+    const handleWheel = (dets) => {
+      if (dets.deltaY > 0) {
+        animateTo("left"); // Scroll down animation
+      } else {
+        animateTo("right"); // Scroll up animation
+      }
+    };
+
+    let startY;
+    const handleTouchStart = (event) => {
+      startY = event.touches[0].clientY;
+    };
+
+    const handleTouchMove = (event) => {
+      const currentY = event.touches[0].clientY;
+      if (startY && Math.abs(currentY - startY) > 30) { // Adding a threshold for touch movement
+        if (currentY < startY) {
+          animateTo("left"); // Swipe up
+        } else {
+          animateTo("right"); // Swipe down
+        }
+        startY = null; // Reset startY to avoid repeated triggers
+      }
+    };
 
     window.addEventListener("wheel", handleWheel);
-    // window.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchmove", handleTouchMove);
 
-     return () => {
-       window.removeEventListener("wheel", handleWheel);
-    //   window.removeEventListener("touchmove", handleTouchMove);
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
-   }, []);
-   useEffect(() => {
-    gsap.to(".moving", {
-      x: "-200%", // Moves element to the left by 200%
-      ease: "none",
-      scrollTrigger: {
-        trigger: "body",  // The section that triggers the animation
-        start: "top center",       // Adjust as needed
-        end: "bottom top",         // Adjust as needed
-        scrub: 1,                  // Smoothens the animation and links it to the scroll position
-        pin: false,                // Set to true if you want to pin the element while it scrolls
-        markers: false,            // Set to true for debugging (shows start and end markers)
-      },
-    });
-  }, []);
+  }, [isAnimating]);
   
 
 
