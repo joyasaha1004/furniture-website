@@ -5,7 +5,7 @@
 @layer components{
 
    .moving{
-       @apply text-white shrink-0 tracking-wider translate-x-[-100%] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[55px] font-sans text-center
+       @apply text-white shrink-0 tracking-wider translate-x-[-100%] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[55px] font-sans text-center will-change-scroll
    }
    .hero-imglist{           
        @apply hover:scale-110 hover:transition duration-700 ease-in-out delay-75 
