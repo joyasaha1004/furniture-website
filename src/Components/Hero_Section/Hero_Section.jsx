@@ -65,7 +65,7 @@ const Hero_Section = () => {
       x: "-200%", // Moves element to the left by 200%
       ease: "none",
       scrollTrigger: {
-        trigger: ".Hero_Section",  // The section that triggers the animation
+        trigger: "body",  // The section that triggers the animation
         start: "top center",       // Adjust as needed
         end: "bottom top",         // Adjust as needed
         scrub: 1,                  // Smoothens the animation and links it to the scroll position
