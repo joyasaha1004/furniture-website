@@ -86,7 +86,7 @@ const Navbar = () => {
                
 
               <ul className="text-stone full text-lg flex grid  gap-2 font-bold font-sans text-center dark:text-white">
-              <li><Link to="/hero"> Home</Link></li>
+              <li><Link to="/furniture-website"> Home</Link></li>
                        <li><Link to="/gallery">Gallery</Link></li>
                        <li><Link to="/shop">Shop</Link></li>
                        <li><Link to="/contact">Contact Us</Link></li>
