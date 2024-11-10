@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./Navbar.css";
 import {useState, useEffect} from "react"
-import { Link } from 'react-router-dom';
+import {  Link,NavLink } from 'react-router-dom';
+import hero from "../Pages/Hero"
+import shop from "../Pages/Shop"
+import gallery from "../Pages/Gallery"
+import contact from "../Pages/Contact"
 
 const Navbar = () => {
 
@@ -40,6 +44,11 @@ const Navbar = () => {
     }
 //    Dark mode close
 
+//active status
+
+
+
+
     return (
         <div className="w-[300px] sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1510px] fixed z-50">
 
@@ -67,10 +76,10 @@ const Navbar = () => {
 
                <div className=" lg:ml-52 xl:ml-[350px] lg:pt-1 xl:pt-1 xxl:ml-[400px]">
                    <ul className="text-stone flex invisible lg:visible  md:text-lg md:gap-16 menu lg:text-2xl xl:text-2xl xl:gap-20 ">
-                       <li className="active:text-black"><Link to="/furniture-website" > Home</Link></li>
-                       <li><Link to="/gallery">Gallery</Link></li>
-                       <li><Link to="/shop">Shop</Link></li>
-                       <li><Link to="/contact">Contact Us</Link></li>
+                       <li ><NavLink to="/furniture-website" className={({isActive})=>(isActive ? "text-black" : "text-white")}> Home</NavLink></li>
+                       <li><NavLink to="/gallery"  className={({isActive})=>(isActive ? "text-black" : "text-white")}>Gallery</NavLink></li>
+                       <li ><NavLink to="/shop"  className={({isActive})=>(isActive ? "text-black" : "text-white")}>Shop</NavLink></li>
+                       <li><NavLink to="/contact"  className={({isActive})=>(isActive ? "text-black" : "text-white")}>Contact Us</NavLink></li>
                       
                    </ul>
                    </div>

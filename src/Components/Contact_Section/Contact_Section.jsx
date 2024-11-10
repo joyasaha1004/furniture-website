@@ -38,7 +38,7 @@ const Contact_Section = () => {
 </div>
 
 
-<div className="px-4 mt-12 sm:px-2 md:mt-20  lg:mt-28 xl:mt-36">
+<div className="px-4 mt-12 sm:px-2 md:mt-20  lg:mt-28 lg:px-4 xl:mt-36 xxl:px-6">
   <div className=" text-center bg-sky-800 w-full px-4 py-4 text-white text-sm rounded-lg  md:flex  sm:grid grid-cols-2  md:text-base md:py-6 md:gap-8  lg:text-xl lg:py-8 xl:text-2xl xl:py-10   ">
 
       <div className="mb-6 md:-ml-5 xl:-ml-3">
@@ -67,7 +67,7 @@ const Contact_Section = () => {
 
 
  <div className="mb-6 sm:mx-2">
-     <div className="info lg:pl-12 xl:ml-16">
+     <div className="info md:pl-8 lg:pl-12 xl:ml-16">
  <i class="ri-calendar-schedule-fill"></i>
       <h3>HOURS</h3>
       </div> 

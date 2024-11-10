@@ -22,7 +22,7 @@ const Gallery_Section = () => {
                 <img src={gallery_bg} className=" w-full h-[455px]  md:h-[550px] lg:h-[790px] xl:h-[980px]"></img>
 </div>
                 <div className="text-center relative -top-[350px] text-sm sm:-top-[330px] md:text-lg md:-top-[400px] lg:text-2xl lg:-top-[500px] xl:-top-[640px]">
-                    <h1 className="text-3xl  px-5 text-sky-500 font-bold sm:text-4xl md:leading-[60px] md:text-5xl lg:text-6xl xl:text-7xl"> Discover Quality You Can Trust</h1>
+                    <h1 className="text-3xl leading-snug sm:leading-snug  px-5 text-sky-500 font-bold sm:text-4xl md:leading-[60px] md:text-5xl lg:text-6xl xl:text-7xl"> Discover Quality You Can Trust</h1>
                     <p className=" text-white px-2 mt-4 leading-relaxed sm:px-16 md:px-20 md:mt-6 lg:px-28 xl:px-72"> Explore our collection of hand-picked furniture, crafted with precision and passion to elevate your home.</p>
                     <button className="bg-transparent text-sky-800 border-2 border-sky-800 mt-6 px-2 py-2 text-xs font-bold hover:bg-sky-800 hover:text-white md:text-base lg:text-lg lg:mt-10 xl:text-xl">SHOP NOW</button>
 
