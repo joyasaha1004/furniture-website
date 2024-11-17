@@ -23,7 +23,7 @@ const Footer = () => {
             <span>joyasaha440@gmail.com</span>
             </div>
             </div>
-   <div className="sm:ml-60 md:mt-5 md:-ml-24 lg:ml-8 xl:mt-10 xl:ml-20 xxl:ml-64">
+   <div className="ml-2 sm:ml-60 md:mt-5 md:-ml-24 lg:ml-8 xl:mt-10 xl:ml-20 xxl:ml-64">
             <div className="px-12 flex mt-2 sm:h-7 sm:-mt-6 md:h-9 md:mt-44 xl:h-12">
                 <input type="text" className="text-xs w-48 px-8 sm:w-52 md:w-72 md:text-base lg:text-lg lg:w-80 xl:w-96 xl:text-xl " placeholder="Search"></input>
                 <i class="ri-search-line  text-white bg-black px-2 -ml-8 md:text-lg md:py-1 md:-ml-[34px] lg:text-xl  dark:bg-gray-800 lg:-ml-[36px] xl:text-2xl xl:px-3 xl:-ml-[48px] xl:py-2"></i>
