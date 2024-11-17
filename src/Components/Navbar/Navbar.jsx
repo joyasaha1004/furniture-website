@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <nav className="h-12 bg-sky-600  w-full text-white px-3 py-2 text-xl flex dark:bg-sky-800 sm:px-5 md:h-[55px] md:py-3 lg:py-3 lg:h-[65px]">
+            <nav className="h-12 bg-sky-600  w-full text-white px-3 py-2  flex dark:bg-sky-800 sm:px-5 md:h-[55px] md:py-3 lg:py-3 lg:h-[65px]">
 
                <i className="ri-menu-3-line lg:invisible " onClick={toggleMenu}></i>
 
@@ -84,7 +84,7 @@ const Navbar = () => {
                    </ul>
                    </div>
 
-                   <i className="ri-moon-line  relative sm:-right-[33%] md:-right-44 lg:-right-40 lg:text-4xl xl:-right-[15%] xl:text-4xl xxl:-right-[28%]" onClick={handleThemeSwitch}></i> 
+                   <i className="ri-moon-line  relative -right-6 sm:-right-[33%] md:-right-44 lg:-right-40 lg:text-4xl xl:-right-[15%] xl:text-4xl xxl:-right-[28%]" onClick={handleThemeSwitch}></i> 
 
             </nav>
 
