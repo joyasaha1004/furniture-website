@@ -84,7 +84,7 @@ const Navbar = () => {
                    </ul>
                    </div>
 
-                   <i className="ri-moon-line  relative -right-6 sm:-right-[33%] md:-right-44 lg:-right-40 lg:text-4xl xl:-right-[15%] xl:text-4xl xxl:-right-[28%]" onClick={handleThemeSwitch}></i> 
+                   <i className="ri-moon-line  relative -right-6 sm:-right-48 md:-right-44 lg:-right-40 lg:text-4xl xl:-right-[15%] xl:text-4xl xxl:-right-[28%]" onClick={handleThemeSwitch}></i> 
 
             </nav>
 
