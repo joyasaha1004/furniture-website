@@ -12,7 +12,7 @@ export default {
       md: '500px',
       lg: '700px',
       xl: '1000px',
-      xxl: '1280px',
+      xxl: '1500px',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
@@ -20,7 +20,22 @@ export default {
        satisfy:["Bebas Neue", "sans-serif"]
     },
     extend:{
-     
+      backgroundImage: {
+        'hero_bg': "url('../Assets/hero_bg1.png')",
+        'gallery_bg': "url('../Assets/gallery_bg.png')",
+        'lamp_img': "url('../Assets/lamp1.png')",
+        'shop_bg':"url('../Assets/shop_bg2.png')",
+        'contact_bg':"url('../Assets/contact_bg.png')"
+        // 'hero-bg': "url('../Assets/hero_bg1.png')",
+        // 'restaurant-pic' : "url('../Assets/restaurant_bg.png')",
+        // 'footer-pic' : "url('../Assets/footer.png')",
+        // 'offer-pic' : "url('../Assets/offer_bg.png')",
+        //  'menu' : "url('../Assets/menu_bg.png')",
+        // 'reservation-bg': "url('../Assets/reservation1.png')",
+        // 'wood-bg': "url('../Assets/wood_bg.png')",
+        // 'contact-bg':"url('../Assets/contact_bg.png')",
+       
+      }
     },
   },
   plugins: [],

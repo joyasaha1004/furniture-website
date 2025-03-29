@@ -5,28 +5,30 @@
 @layer components{
 
    .moving{
-       @apply text-white shrink-0 tracking-wider translate-x-[-100%] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[55px] font-sans text-center will-change-scroll
+       @apply text-white shrink-0 tracking-wider translate-x-[-100%] text-2xl font-sans text-center font-medium lg:text-3xl xl:text-4xl will-change-scroll
    }
    .hero-imglist{           
-       @apply hover:scale-110 hover:transition duration-700 ease-in-out delay-75 
+       @apply justify-items-center hover:scale-110 hover:transition duration-700 ease-in-out delay-75 
    }
    .hero-imglist img{
-       @apply w-20 h-52 mb-2  md:w-28 md:h-72 lg:w-36 lg:h-96 xl:w-36 xl:h-[440px]
+       @apply w-20 h-52 mb-2  md:w-28 md:h-72 lg:w-36 lg:h-96 xl:w-32 
    }
    .hero-imglist span{
-       @apply mx-4 text-sm font-bold  md:text-lg md:mx-6 lg:text-xl lg:mx-10 xl:text-2xl
+       @apply  text-xs font-bold md:text-lg xl:text-xl
    }
    .service-section{
-       @apply mb-10 dark:text-white sm:mb-16
+       @apply mb-10 dark:text-white sm:mb-16 
    }
    .service-section i{
        @apply text-xl text-sky-500 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
    }
+   .service-info{
+    @apply 
+   }
    .service-section h2{
-       @apply text-xl font-bold mt-2 sm:text-2xl md:text-3xl md:mt-4 lg:text-3xl lg:mt-6 xl:text-4xl xl:mt-8
+       @apply text-xl font-bold mt-2  md:text-2xl md:mt-4 lg:text-3xl lg:mt-6 xl:text-4xl xl:mt-8
    }
    .service-section p{
-       @apply text-sm mt-2 leading-relaxed md:text-lg md:mt-4 lg:text-xl lg:leading-[40px]
-       xl:text-2xl xl:leading-[50px]
+       @apply text-xs mt-2 leading-loose md:text-lg md:mt-4 lg:text-xl lg:w-80  lg:leading-loose xl:leading-loose xl:text-2xl 
    }
 }

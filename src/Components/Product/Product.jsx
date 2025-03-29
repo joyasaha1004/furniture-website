@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import "./Product.css"
+import "./Product.css";
 
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -490,8 +490,18 @@ const CustomNextArrow = (props) => {
         nextArrow: <CustomNextArrow  />,
          prevArrow: <CustomPrevArrow />,
         responsive: [
+          
           {
-            breakpoint: 1670,
+            breakpoint: 1900,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+                 //centerPadding: "20px",
+            }
+          },
+
+          {
+            breakpoint: 1800,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
@@ -539,14 +549,14 @@ const CustomNextArrow = (props) => {
     }
      
     return (
-        <div className="w-[300px] font-sans dark:bg-gray-900 dark:text-white pb-10 sm:pb-16 sm:w-[500px] sm:-mt-10 md:pb-32 md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1510px] overflow-x-hidden">
+        <div className="font-sans dark:bg-gray-900 dark:text-white pt-10 pb-10  overflow-x-hidden">
              <div>
 
-<div className="header -left-8 sm:-left-32 md:-left-44 lg:-left-[300px] xl:-left-[380px] xxl:-left-[490px]">
+<div className="header justify-self-start px-3">
 <h1>Our<span className=""> Products</span></h1>
 </div>
 
-<div className=" relative mt-12 px-4 mb-4  lg:px-7 md:mt-20 lg:-ml-8 xl:px-12 xxl:-ml-12">
+<div className="pb-8 relative mt-12 px-4   lg:px-7 ">
        <ul className=" linklist grid grid-cols-2 gap-4 flex-wrap text-center sm:grid-cols-4  xl:grid-cols-5 lg:gap-2 xxl:grid-cols-6">
 
       
@@ -561,20 +571,20 @@ const CustomNextArrow = (props) => {
        </ul>
       </div>
 
-      <div className="sm:-mt-10 md:mt-10 lg:w-full relative ">
+      <div className="  lg:w-full relative ">
           <Slider {...setter} ref={sliderRef}>
            
-               <div className="mt-24  ">
-<Slider {...settings} >
+               <div className=" ">
+<Slider {...settings} className="slider">
   {LampList.map((data)=>(
       
 
-  <div className=" px-8  py-5 hover:transition duration-700 sm:px-6 md:px-10 hover:scale-105 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[450px] xl:h-[480px]"/>
+  <div className="products px-8  py-5  sm:px-6 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
 
-    <div className=" mt-6 text-center relative xl:-ml-2">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-2xl ">{data.name}</h3>
-  <span className="text-sm text-gray-400 font-bold md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
+    <div className=" mt-5 text-center relative product-name">
+  <p className="">{data.name}</p>
+  <span className="">{data.price}</span>
     </div>
 
 
@@ -584,17 +594,17 @@ const CustomNextArrow = (props) => {
 </Slider>
 </div>
 
-<div className="mt-24 ">
+<div className="">
 <Slider {...settings} >
   {ChairList.map((data)=>(
       
 
-  <div className="products  px-8 hover:transition duration-700 sm:px-6 md:px-10 hover:scale-105 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
+  <div className="products  px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative ">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
-  <span className="text-sm text-gray-400 md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
+    <div className="mt-6 text-center relative product-name">
+  <p className="">{data.name}</p>
+  <span className="">{data.price}</span>
     </div>
 
 
@@ -604,18 +614,17 @@ const CustomNextArrow = (props) => {
 </Slider>
 </div>
 
-<div className="mt-24 
- ">
+<div className=" ">
 <Slider {...settings} >
   {DecorList.map((data)=>(
       
 
-  <div className="products px-8 hover:transition duration-700 sm:px-6 md:px-10 hover:scale-105 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className=" w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
+  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative ">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
-  <span className="text-sm text-gray-400 md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
+    <div className="mt-6 text-center relative product-name">
+  <p className="">{data.name}</p>
+  <span className="">{data.price}</span>
     </div>
 
 
@@ -625,17 +634,17 @@ const CustomNextArrow = (props) => {
 </Slider>
 </div>
 
-<div className="mt-24 ">
+<div className="">
 <Slider {...settings} >
   {SofaList.map((data)=>(
       
 
-  <div className="products px-8 hover:transition duration-700 sm:px-6 md:px-10 hover:scale-105 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
+  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative ">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
-  <span className="text-sm text-gray-400 md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
+    <div className="mt-6 text-center relative product-name">
+  <p className="">{data.name}</p>
+  <span className="">{data.price}</span>
     </div>
 
 
@@ -644,18 +653,17 @@ const CustomNextArrow = (props) => {
   ))}
 </Slider>
 </div>
-<div className="mt-24 
- ">
+<div className="">
 <Slider {...settings} >
   {ShelfList.map((data)=>(
       
 
-  <div className="products px-8 hover:transition duration-700 sm:px-6 md:px-10 hover:scale-105 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
+  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative ">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
-  <span className="text-sm text-gray-400 md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
+    <div className="mt-6 text-center relative product-name">
+  <p className=" ">{data.name}</p>
+  <span className="">{data.price}</span>
     </div>
 
 
@@ -665,18 +673,18 @@ const CustomNextArrow = (props) => {
 </Slider>
 </div>
 
-               <div className="mt-24"> 
+               <div className=""> 
                 
 <Slider {...settings} >
   {TableList.map((data)=>(
       
 
-  <div className="products px-8 hover:transition duration-700 sm:px-6 md:px-10 hover:scale-105 lg:px-20 xl:px-20">
-    <img src={data.img} alt="" className="w-[250px] h-64 sm:w-[300px] md:h-[350px] md:w-[250px] lg:w-[320px] lg:h-[450px] xl:w-[480px] xl:h-[480px]"/>
+  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-20">
+    <img src={data.img} alt="" className="h-64 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative lg:mt-8">
-  <h3 className="text-base font-bold md:text-xl md:mb-3 lg:text-3xl ">{data.name}</h3>
-  <span className="text-sm text-gray-400 md:text-base lg:text-xl xl:text-2xl">{data.price}</span>
+    <div className="mt-6 text-center relative product-name lg:mt-8">
+  <p className="">{data.name}</p>
+  <span className="">{data.price}</span>
     </div>
 
 

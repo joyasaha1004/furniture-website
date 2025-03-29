@@ -9,7 +9,7 @@
         @apply border-b-2 border-black  mb-4 w-full  pl-2 md:mb-6 lg:mb-8 xl:mb-12
     }
     .info{
-        @apply flex gap-2 relative mb-3  shrink-0  text-lg sm:pl-12  md:text-xl md:pl-4 md:w-40  lg:text-3xl lg:mb-4 xl:text-4xl lg:w-56 xl:w-80
+        @apply flex gap-2 relative mb-3  shrink-0  text-base sm:justify-center md:text-xl   lg:text-2xl lg:mb-4 xl:text-3xl 
     }
     .info h3{
         @apply font-bold  tracking-wider 

@@ -4,14 +4,17 @@
 
 @layer components{
 
-  .have-img img{
-      @apply h-[143px] sm:w-[250px] sm:h-48 md:w-[370px] md:h-[244px] lg:w-[450px] lg:h-[335px] xl:w-[500px] xl:h-[392px]
+  /* .have-img img{
+      @apply  
+   } */
+   .have-span{
+    @apply absolute text-[0.6em] bg-blue-500 text-white px-3 py-1 rounded-md font-bold lg:text-sm xl:text-lg tracking-wider
    }
   .have-span span{
-    @apply mx-4 my-1 px-6 py-1 text-[10px] bg-sky-500 text-white font-bold rounded tracking-wider sm:text-[12px] md:text-[14px] lg:text-[16px] lg:py-2 xl:text-[18px]
+    @apply mx-4 my-1 px-6 py-1 text-[0.6em] bg-sky-500 text-white font-bold rounded lg:text-sm
   }
   .header{
-    @apply  relative  text-center text-4xl text-black font-bold dark:text-white md:text-5xl  lg:text-6xl xl:text-7xl
+    @apply  relative  text-center text-2xl text-black font-bold dark:text-white sm:text-3xl  lg:text-4xl xl:text-5xl xxl:text-6xl
   }
   .header h1 span{
       @apply underline decoration-sky-500 decoration-4 underline-offset-8

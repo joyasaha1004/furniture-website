@@ -6,7 +6,6 @@ import Cart from "../Cart/Cart";
 
 const Shop = () => {
 
-   
     return (
         <div>
             <Shop_Section/>

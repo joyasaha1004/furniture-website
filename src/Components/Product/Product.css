@@ -4,11 +4,21 @@
 
 @layer Components{
 
-
     .linklist li{
-        @apply text-base font-bold hover:text-sky-500 sm:mb-4 md:text-xl  lg:text-3xl lg:mb-8 xl:text-4xl xl:mb-12
+        @apply text-sm shrink-0 font-bold hover:text-sky-500 sm:mb-4 md:text-base lg:text-xl lg:mb-8 xl:text-2xl xl:mb-12
     }
-   
+    .product-name{
+      @apply sm:mt-2 xxl:justify-center
+    }
+  .product-name p{
+    @apply text-sm leading-snug font-bold mb-4  md:text-base md:mb-3 lg:text-xl xl:mb-5 
+  }
+  .product-name span{
+    @apply text-sm text-gray-400 md:text-base lg:text-xl 
+  }
+  slider{
+    @apply sm:my-8
+  }
 }
 .custom-arrow,.customprev-arrow {
     display: block;
@@ -26,6 +36,12 @@
   }
   .customprev-arrow{
       left: 15px;
+  }
+  @media(max-width:1800px){
+    .custom-arrow,.customprev-arrow{
+      font-size: 30px;
+      top: 220px;
+    }
   }
   @media (max-width: 1610px) {
     .custom-arrow,.customprev-arrow {
