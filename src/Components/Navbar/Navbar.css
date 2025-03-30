@@ -5,13 +5,13 @@
 @layer components{
 
     .first-nav i{
-        @apply cursor-pointer dark:text-white relative lg:text-2xl xl:text-3xl
+        @apply cursor-pointer dark:text-white relative text-lg sm:text-xl lg:text-2xl xl:text-3xl
     }
     .full li{
         @apply cursor-pointer py-2 hover:bg-sky-200  hover:text-white
     }
     nav i{
-        @apply cursor-pointer  lg:text-2xl xl:text-3xl
+        @apply cursor-pointer text-lg sm:text-xl lg:text-2xl xl:text-3xl
         }
     .menu li{
         @apply cursor-pointer font-bold 

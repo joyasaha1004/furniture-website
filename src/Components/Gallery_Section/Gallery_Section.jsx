@@ -18,7 +18,7 @@ const Gallery_Section = () => (
 
       <div className="text-center relative pt-20 text-xs sm:pt-20 md:pt-24 lg:text-lg lg:pt-40 xl:pt-52 ">
         <h1 className="text-2xl leading-snug  px-5 text-sky-500 font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"> Discover Quality You Can Trust</h1>
-        <p className=" text-white px-2 mt-2 leading-relaxed sm:px-16 md:px-20  lg:px-28 lg:mt-4 xl:px-72"> Explore our collection of hand-picked furniture, crafted with precision and passion to elevate your home.</p>
+        <p className=" text-white px-2 mt-2 leading-relaxed sm:px-6 md:px-20  lg:px-28 lg:mt-4 xl:px-72"> Explore our collection of hand-picked furniture, crafted with precision and passion to elevate your home.</p>
         <button className="bg-transparent text-sky-800 border-2 border-sky-800 mt-6 px-2 py-2  font-bold hover:bg-sky-800 hover:text-white">SHOP NOW</button>
 
         <div className="text-gray-400 text-xs justify-center pt-4  flex gap-1 sm:text-sm md:text-md lg:pt-8 lg:text-lg">

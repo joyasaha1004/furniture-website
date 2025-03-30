@@ -53,14 +53,14 @@ const Navbar = () => {
         <div className="overflow-hidden w-full ">
 
             <div className="first-nav h-8 bg-stone-100 flex justify-between px-2
-             dark:bg-gray-800 relative items-center lg:h-12 xl:h-16">
+             dark:bg-gray-800 relative items-center  lg:h-12 xl:h-16">
                 <div className="flex gap-2 ">
                 <i class="ri-facebook-circle-line"></i>
                 <i class="ri-twitter-line"></i>
                 <i class="ri-telegram-line"></i>
                 </div>
 
-                <h1 className="text-xl text-sky-500 font-serif  font-bold tracking-wider lg:text-3xl xl:text-4xl ">Livin</h1>
+                <h1 className="text-xl text-sky-500 sm:text-2xl font-serif  font-bold tracking-wider lg:text-3xl xl:text-4xl ">Livin</h1>
 
                 <div className=" gap-2 flex  ">
                 <i class="ri-heart-3-line"></i>

@@ -69,7 +69,7 @@ const Hero_Section = () => {
 
 
     return (
-        <div className=" overflow-x-hidden relative font-sans w-full dark:bg-gray-900 dark:text-white" >
+        <div className=" overflow-x-hidden pb-10 relative font-sans w-full dark:bg-gray-900 dark:text-white md:pb-16" >
          
    <div className="bg-hero_bg  bg-cover bg-center h-fit  w-full mb-16">
 
@@ -137,7 +137,7 @@ const Hero_Section = () => {
     </div>
 
     <div className="px-4 pt-9 font-sans text-xs gap-4 md:pt-12 md:text-lg lg:pt-16 lg:text-xl lg:px-6 xl:text-2xl xl:pt-16  xxl:pt-40  ">
-      <h3 className=" text-xl font-bold mb-4 md:text-3xl lg:text-4xl xl:leading-normal xl:text-5xl">Crafted with excellent material </h3>
+      <h3 className=" text-xl font-bold mb-4 sm:text-2xl md:text-3xl lg:text-4xl xl:leading-normal xl:text-5xl">Crafted with excellent material </h3>
       <span className="leading-loose ">In furniture making, a variety of materials are used depending on the style, function, and durability required. Wood is one of the most common materials, with hardwoods like oak, maple, and walnut prized for their strength and aesthetic appeal, while softwoods like pine are often chosen for more affordable or lightweight options. Sustainable materials like bamboo and reclaimed wood are also becoming more popular due to their eco-friendliness.</span><br></br>
 
       <button className="px-7 py-2 bg-sky-800 text-white mt-4 dark:bg-sky-500 md:mt-5 xl:px-9 xl:py-4 hover:bg-transparent hover:text-sky-500 dark:hover:bg-white">See More</button>
@@ -152,7 +152,7 @@ const Hero_Section = () => {
     <div className='xl:px-8 xl:self-center'>
       <img src={story_img} alt="" className="h-60 w-72 sm:w-full sm:h-72 lg:h-96"/>
     </div>
-    <div className="mt-6 text-right relative lg:mt-16 xl:-mt-5 xxl:self-center">
+    <div className="mt-4 text-right relative lg:mt-8 xl:-mt-5 xxl:self-center">
       <h2 className="text-xl font-extrabold dark:text-sky-500 text-sky-900 md:text-2xl lg:text-3xl xl:text-5xl">Our Story</h2>
       <p className=" mt-3 leading-loose dark:text-white  xl:mt-5"><span className="text-sky-500 font-extrabold tracking-widest"> Livin </span>  began in a small workshop where a group of passionate craftsmen envisioned creating timeless, handcrafted furniture that blended beauty with function.Over the years, the company partnered with talented designers, launching collections that reflected contemporary trends while staying true to its roots.
        Today,<span className="text-sky-500 font-extrabold tracking-widest"> Livin</span> is known for its durable, elegant furniture, offering sustainable and stylish solutions to homes around the world.
@@ -161,9 +161,9 @@ const Hero_Section = () => {
   </div>
 
   {/* service section      */}
-      <div className=" text-center  px-4 mt-28 sm:px-7 lg:flex flex-wrap lg:justify-evenly lg:px-4 xl:gap-16 md:gap-10  md:mt-52 lg:px-10 xl:mt-72 ">
+      <div className=" text-center  px-4 mt-20 sm:px-7 lg:flex flex-wrap lg:justify-evenly lg:px-4  md:mt-28 lg:px-8 xl:mt-36 lg:grid grid-cols-2  xl:grid-cols-3 xl:px-4 lg:gap-6">
 
-        <div className="service-section">
+        <div className="service-section lg:col-span-1">
         <i class="ri-ball-pen-line"></i>
         <div className=''>
           <h2>MORDERN DESIGN</h2>
@@ -172,7 +172,7 @@ const Hero_Section = () => {
         </div>
         </div>
 
-        <div className="service-section">
+        <div className="service-section lg:col-span-1">
         <i class="ri-price-tag-line"></i>
         <div>
           <h2>HONEST PRICES</h2>
@@ -180,11 +180,11 @@ const Hero_Section = () => {
         </div>
         </div>
 
-          <div className="service-section relative ">
+          <div className="service-section lg:col-span-2 xl:col-span-1">
           <i class="ri-service-line"></i>
-        <div>
+        <div className=''>
           <h2>GREAT SUPPORT</h2>
-          <p className=''>Experience exceptional support, with friendly service every step of the way.</p>
+          <p className='lg:mx-48 xl:mx-0'>Experience exceptional support, with friendly service every step of the way.</p>
         </div>
         </div>
       </div> 
