@@ -19,6 +19,7 @@
   .product-name span{
     @apply text-sm text-gray-400 md:text-base lg:text-xl 
   }
+}
 .custom-arrow,.customprev-arrow {
     display: block;
  /* font-size: 20px; Default font size */
