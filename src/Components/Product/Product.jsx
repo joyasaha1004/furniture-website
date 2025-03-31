@@ -538,7 +538,7 @@ const CustomNextArrow = (props) => {
             }
           },
           {
-            breakpoint: 299,
+            breakpoint: 499,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -556,8 +556,8 @@ const CustomNextArrow = (props) => {
 <h1>Our<span className=""> Products</span></h1>
 </div>
 
-<div className="pb-8 relative mt-12 px-4   lg:px-7 ">
-       <ul className=" linklist grid grid-cols-2 gap-4 flex-wrap text-center sm:grid-cols-4  xl:grid-cols-5 lg:gap-2 xxl:grid-cols-6">
+<div className="pb-8 linklist relative mt-12 px-4 lg:px-7 ">
+       <ul className="  grid grid-cols-2 gap-4 flex-wrap text-center sm:grid-cols-4  xl:grid-cols-5 lg:gap-2 xxl:grid-cols-6">
 
       
 
@@ -571,7 +571,7 @@ const CustomNextArrow = (props) => {
        </ul>
       </div>
 
-      <div className="  lg:w-full relative ">
+      <div className="lg:w-full relative ">
           <Slider {...setter} ref={sliderRef}>
            
                <div className=" ">
@@ -579,10 +579,10 @@ const CustomNextArrow = (props) => {
   {LampList.map((data)=>(
       
 
-  <div className="products px-8  py-5  sm:px-6 md:px-10 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
+  <div className="products px-7 py-5 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 sm:h-60 md:h-80 lg:h-96"/>
 
-    <div className=" mt-5 text-center relative product-name">
+    <div className=" product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
     </div>
@@ -599,10 +599,10 @@ const CustomNextArrow = (props) => {
   {ChairList.map((data)=>(
       
 
-  <div className="products  px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
+  <div className="products  px-8  md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 sm:h-60 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative product-name">
+    <div className=" product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
     </div>
@@ -619,10 +619,10 @@ const CustomNextArrow = (props) => {
   {DecorList.map((data)=>(
       
 
-  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
+  <div className="products px-8 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 sm:h-60 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative product-name">
+    <div className=" product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
     </div>
@@ -639,10 +639,10 @@ const CustomNextArrow = (props) => {
   {SofaList.map((data)=>(
       
 
-  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
+  <div className="products px-8 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 sm:h-60 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative product-name">
+    <div className="product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
     </div>
@@ -658,10 +658,10 @@ const CustomNextArrow = (props) => {
   {ShelfList.map((data)=>(
       
 
-  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-16">
-    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
+  <div className="products px-8 md:px-10 lg:px-20 xl:px-16">
+    <img src={data.img} alt=""  className="h-64 sm:h-60 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative product-name">
+    <div className=" product-name">
   <p className=" ">{data.name}</p>
   <span className="">{data.price}</span>
     </div>
@@ -679,10 +679,10 @@ const CustomNextArrow = (props) => {
   {TableList.map((data)=>(
       
 
-  <div className="products px-8 sm:px-6 md:px-10 lg:px-20 xl:px-20">
-    <img src={data.img} alt="" className="h-64 md:h-80 lg:h-96"/>
+  <div className="products px-8 md:px-10 lg:px-20 xl:px-20">
+    <img src={data.img} alt="" className="h-64 sm:h-60 md:h-80 lg:h-96"/>
 
-    <div className="mt-6 text-center relative product-name lg:mt-8">
+    <div className=" product-name lg:mt-8">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
     </div>
