@@ -141,7 +141,7 @@ const CustomerList=[{
             }
           },
           {
-            breakpoint: 699,
+            breakpoint: 999,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
@@ -150,11 +150,11 @@ const CustomerList=[{
             }
           },
           {
-            breakpoint: 299,
+            breakpoint: 499,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1, 
-              
+             
             }
           }
         ]
@@ -163,7 +163,7 @@ const CustomerList=[{
 
 
   return (
-    <div className="pb-16 pt-8 overflow-x-hidden dark:bg-gray-900 xl:pt-20">
+    <div className="pb-16 pt-8 overflow-x-hidden dark:bg-gray-900 xl:pt-20 xl:pb-24">
 
       <div className="lg:grid grid-cols-2 sm:gap-4 md:px-4">
 
@@ -178,11 +178,11 @@ const CustomerList=[{
         </Slider>
       </div>
 
-      <div className="thumbnail-slider relative right-3 mt-4 px-10 sm:px-28 md:px-44 lg:px-20 xl:px-24 xxl:px-32">
+      <div className="thumbnail-slider relative right-3 mt-4 px-10 sm:px-16 md:px-20 lg:px-20 xl:px-24 xxl:px-32 ">
         <Slider {...thumbSliderSettings} className="">
           {images.map((image, index) => (
             <div key={index} className="">
-              <img src={image} alt={`Thumbnail ${index + 1}`} className="w-full xl:h-[7em]" />
+              <img src={image} alt={`Thumbnail ${index + 1}`} className="w-full" />
             </div>
           ))}
         </Slider>
@@ -191,7 +191,7 @@ const CustomerList=[{
       <div className="px-3 mt-6 dark:text-white xl:items-center">
 
         <div>
-          <h3 className="text-2xl font-bold mb-3 md:mb-5 xl:mb-8 lg:text-4xl xl:text-5xl">Meryi Lounge Chair</h3>
+          <h3 className="text-2xl font-bold mb-3 md:mb-5 md:text-3xl xl:mb-8 lg:text-4xl xl:text-5xl">Meryi Lounge Chair</h3>
           <span className="text-base text-sky-800 md:text-lg xl:text-2xl">$87.96</span>
           <div className="star-div">
           <i class="ri-star-s-fill"></i>
@@ -221,14 +221,14 @@ const CustomerList=[{
       <div className="header ">
                     <h1 className="">Customer<span className=""> Review</span></h1>
  </div>
- <div className="mt-10 text-black md:mt-28 sm:gap-5 lg:mt-20">
+ <div className="mt-10 text-black sm:mt-16 md:mt-28 lg:mt-20">
    <Slider ref={slider => {
           sliderRef = slider;
         }}
-        {...settings} className="mx-12 sm:mx-7">
+        {...settings} className="mx-12 ">
      {CustomerList.map((data)=>(
 
-       <div className="px-4 py-4 bg-gray-600 drop-shadow-lg  text-xs sm:px-3 sm:h-60 rounded-lg  md:text-sm md:px-5 md:h-64 lg:text-base lg:h-80 xl:text-lg xl:h-[18em] xxl:text-xl">
+       <div className="px-4 py-4 bg-gray-600 drop-shadow-lg  text-xs  sm:px-3  sm:h-60 rounded-lg  md:text-sm md:px-5 md:h-64 lg:text-base lg:h-80 xl:text-lg xl:h-[19.5em] xxl:text-xl">
          
          
            <img src={data.img} alt="" className="w-10 h-10 rounded-full lg:w-16 lg:h-16 xl:w-20 xl:h-20"/>
