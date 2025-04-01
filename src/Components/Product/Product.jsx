@@ -463,14 +463,7 @@ const CustomNextArrow = (props) => {
       className={`${className} customprev-arrow`}
         style={{ 
           ...style, 
-        //   display: "block", 
-        //  color:"blue", 
-        //  background:"gray",   // Set arrow color
-        //   borderRadius: "50%",   // Make it round
-        //   left: "10px", 
-        //   fontSize:"20px",
-        //   top:"150px" ,       // Adjust position
-        //   zIndex: 1 , // Ensure it's visible over the slides
+      
         }}
         onClick={onClick}
       >
@@ -484,7 +477,7 @@ const CustomNextArrow = (props) => {
         centerMode: true,
         infinite: true,
         centerPadding: "25px",
-        //slidesToShow: 1 ,
+       
         speed: 500,
         arrow:true,
         nextArrow: <CustomNextArrow  />,
@@ -496,7 +489,7 @@ const CustomNextArrow = (props) => {
             settings: {
               slidesToShow: 4,
               slidesToScroll: 1,
-                 //centerPadding: "20px",
+               
             }
           },
 
@@ -505,7 +498,7 @@ const CustomNextArrow = (props) => {
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-                 //centerPadding: "20px",
+              
             }
           },
 
@@ -519,15 +512,7 @@ const CustomNextArrow = (props) => {
             }
           },
         
-         
-          // {
-          //   breakpoint: 1009,
-          //   settings: {
-          //     slidesToShow: 3,
-          //     slidesToScroll: 1,
-          //     //  centerPadding: "60px",
-          //   }
-          // },
+       
           {
             breakpoint: 999,
             settings: {

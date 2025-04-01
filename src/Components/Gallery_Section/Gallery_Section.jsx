@@ -38,15 +38,7 @@ const Gallery_Section = () => (
       </div>
       <div className="pt-10 md:px-16 xl:px-40 xl:px-52 xl:pt-16">
         <div class="grid grid-cols-2 gap-3 px-2 pb-3 xl:gap-5">
-          {/* <div className="row-span-3 ">
-      
-            <img src={lamp_img1} alt="" className=""/>
-      
-       <div className=" have-span ">
-            <span className="">LIGHTS</span>
-      
-      </div>
-        </div> */}
+        
           <div className="relative justify-center items-center">
             <span className=" have-span ">
               LIGHTS
@@ -59,13 +51,7 @@ const Gallery_Section = () => (
               FURNITURE
             </span>
             <img src={sofa1} className="w-full" />
-            {/*
-        
-          <img src={sofa1} alt=""/>
-          <div className=" have-span ">
-              <span className="">FURNITURE</span>
-          </div>*/}
-
+          
 
           </div>
         </div>
@@ -77,14 +63,7 @@ const Gallery_Section = () => (
             </span>
             <img src={chair1} className="w-full" />
           </div>
-          {/* <div className="have-img">
-      
-            <img src={chair1} alt="" className=""/>
-            <div className=" have-span">
-            <span className="">CHAIR</span>
-      
-      </div>
-        </div> */}
+       
 
           <div className="relative flex justify-center items-center">
             <span className=" have-span">
@@ -92,22 +71,7 @@ const Gallery_Section = () => (
             </span>
             <img src={shelf1} className="w-full" />
           </div>
-          {/* <div className="have-img col-span-1">
-        <img src={shelf1} alt=""/>
-      
-        <div className="have-span ">
-            <span className="">SHELF</span>
-      
-      </div>
-        </div> */}
-          {/* <div className=" col-span-2 ">
-        <img src={table1} alt="" className="w-full h-52"/>
-      
-        <div className="have-span ">
-            <span className="">OUTDOOR DESIGN</span>
-      
-      </div>
-        </div> */}
+        
           <div className="relative col-span-2 flex justify-center items-center">
             <span className="have-span ">
               OUTDOOR DESIGN

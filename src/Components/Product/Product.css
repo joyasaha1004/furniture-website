@@ -22,8 +22,6 @@
 }
 .custom-arrow,.customprev-arrow {
     display: block;
- /* font-size: 20px; Default font size */
-   
     background: black;
     border-radius: 50%;
     top: 70px;
@@ -96,12 +94,7 @@
         left: 15px;
     }
   }
-  /* @media (max-width: 499px) {
-    .custom-arrow,.customprev-arrow {
-      font-size: 19px;
-      top: 100px;
-      /* Small screen size */
-    /* }} */ 
+ 
   @media (max-width: 499px) {
     .custom-arrow,.customprev-arrow {
       font-size: 19px;

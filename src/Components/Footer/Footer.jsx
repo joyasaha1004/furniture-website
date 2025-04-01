@@ -23,9 +23,11 @@ const Footer = () => {
             </div>
             </div>
    <div className="lg:self-center">
-            <div className="justify-center flex mt-2 sm:h-7 md:h-8  lg:h-10">
-                <input type="text" className="text-xs px-4 text-center md:text-base lg:text-lg lg:w-72 xl:text-xl " placeholder="Search"></input>
-                <i class="ri-search-line text-white bg-black px-2 sm:py-0.5 md:py-1 self-center  dark:bg-gray-800 lg:py-1.5 xl:px-3 xl:py-2"></i>
+            <div className="justify-self-center text-sm text-gray-400 hover: relative text-center flex mt-2 bg-white h-7 sm:h-7 md:h-8  lg:h-9">
+                <input type="text" className="text-xs px-4 w-48 text-center md:text-base lg:text-lg md:w-60 lg:w-72 xl:text-xl " placeholder="Search"></input>
+                
+                
+                <i class="ri-search-line absolute right-0 p-1 bg-black md:p-1.5 lg:p-2"></i>
             </div>
 
             <div className="text-xl gap-1 justify-center flex pt-2 text-white mb-2 md:text-3xl md:gap-3  lg:text-4xl lg:pt-4 ">

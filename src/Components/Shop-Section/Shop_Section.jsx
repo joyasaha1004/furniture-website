@@ -7,15 +7,7 @@ const Shop_Section = () => {
         <div className=" font-sans w-full dark:bg-gray-900 dark:text-white pb-7 sm:pb-9  overflow-x-hidden">
 
         <div>
-{/* 
-            <div className="grid grid-cols-2 flex">
-            <div>
-            <img src={shop_bg} className=""></img>
-</div>
-<div>
-            <img src={shop_bg2} className=""></img>
-</div>
-</div> */}
+
 
 <div className="text-center relative bg-shop_bg pt-24 pb-7 sm:pb-10 md:pb-24 lg:pb-36 bg-cover bg-center text-xs md:pt-28 lg:text-base lg:pt-44 xl:pt-52 xl:text-lg xxl:text-xl">
                     <h1 className="text-2xl leading-snug  px-5 text-sky-500 font-bold sm:text-4xl  lg:text-5xl xl:leading-normal xl:text-6xl"> Shop Our Curated Furniture Collection</h1>
