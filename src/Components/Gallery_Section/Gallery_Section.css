@@ -12,7 +12,7 @@
     @apply mx-4 my-1 px-6 py-1 text-[0.6em] bg-sky-500 text-white font-bold rounded lg:text-sm
   }
   .header{
-    @apply  relative  text-center text-2xl text-black font-bold dark:text-white sm:text-3xl  lg:text-4xl xl:text-5xl xxl:text-6xl
+    @apply  relative  text-center text-2xl text-black font-bold dark:text-white sm:text-3xl md:text-4xl  lg:text-5xl xl:text-5xl 
   }
   .header h1 span{
       @apply underline decoration-sky-500 decoration-4 underline-offset-8

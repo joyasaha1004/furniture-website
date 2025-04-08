@@ -11,7 +11,7 @@ import shelf1 from "../Assets/shelf3.png"
 
 
 const Gallery_Section = () => (
-  <div className=" font-sans relative w-full dark:bg-gray-900 dark:text-white pb-7 sm:pb-9 overflow-x-hidden">
+  <div className=" font-sans relative w-full dark:bg-gray-900 dark:text-white pb-7 sm:pb-9 overflow-x-hidden max-w-screen-xl mx-auto">
 
 
     <div className='relative bg-gallery_bg bg-cover bg-center pb-7 sm:pb-10 md:pb-16 lg:pb-28 xl:pb-40'>
@@ -36,8 +36,8 @@ const Gallery_Section = () => (
         <h1>We<span className=""> Have</span></h1>
 
       </div>
-      <div className="pt-10 md:px-16 xl:px-40 xl:px-52 xl:pt-16">
-        <div class="grid grid-cols-2 gap-3 px-2 pb-3 xl:gap-5">
+      <div className="pt-10 sm:pt-16 sm:px-6 md:px-[2em] lg:px-[3em] lg:pt-20">
+        <div class="grid grid-cols-2 gap-3 px-2 pb-3 md:gap-6 md:pb-6 xl:gap-5">
         
           <div className="relative justify-center items-center">
             <span className=" have-span ">
@@ -55,7 +55,7 @@ const Gallery_Section = () => (
 
           </div>
         </div>
-        <div class="grid grid-cols-2  gap-3 px-2 xl:gap-5">
+        <div class="grid grid-cols-2  gap-3 px-2 md:gap-6 xl:gap-5">
 
           <div className="relative  flex justify-center items-center">
             <span className="have-span">
@@ -76,7 +76,7 @@ const Gallery_Section = () => (
             <span className="have-span ">
               OUTDOOR DESIGN
             </span>
-            <img src={table1} className="w-full h-52 md:h-72 xl:h-96"/>
+            <img src={table1} className="w-full h-44 md:h-72 lg:h-96 "/>
           </div>
         </div>
       </div>

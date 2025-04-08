@@ -5,7 +5,7 @@ import React from 'react';
 
 const Contact_Section = () => {
     return (
-        <div className="pb-20 overflow-x-hidden dark:bg-gray-900 ">
+        <div className="pb-20 overflow-x-hidden dark:bg-gray-900 max-w-screen-xl mx-auto">
 
 
             <div>
@@ -17,7 +17,7 @@ const Contact_Section = () => {
 </div>
 
 
-<div className="pt-12 px-2 sm:px-6 md:px-20 lg:px-24 ">
+<div className="pt-12 px-2 sm:px-6 md:px-12 lg:px-24 ">
 <div className=" relative text-center w-full bg-white rounded-md px-2 py-6 drop-shadow-2xl sm:px-8 md:py-8 ">
 <div className="header dark:text-black ">
                     <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">Contact<span className=""> Us</span></h1>
@@ -26,7 +26,7 @@ const Contact_Section = () => {
     <div className="text-xs mt-8 tracking-wide sm:mt-10 lg:text-lg md:mt-16 ">
         <input type="text" placeholder="Enter Your Name" className="input h-10 lg:py-8"></input>
         <input type="email" placeholder="Enter a valid email address" className="input h-10 lg:py-8"></input>
-        <textarea placeholder="Enter your message" className="input h-28"></textarea>
+        <textarea placeholder="Enter your message" className="input h-28 sm:h-20 lg:h-28"></textarea>
         <button className="bg-sky-800 text-white px-4 sm:mt-4 rounded-lg py-2 hover:text-sky-800 hover:border-2
       hover:border-sky-800 hover:bg-transparent md:mt-3 lg:px-8 lg:py-4">Submit</button>
     </div>

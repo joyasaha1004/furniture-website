@@ -4,7 +4,7 @@ import shop_bg2 from "../Assets/shop_bg2.png"
 
 const Shop_Section = () => {
     return (
-        <div className=" font-sans w-full dark:bg-gray-900 dark:text-white pb-7 sm:pb-9  overflow-x-hidden">
+        <div className=" font-sans w-full dark:bg-gray-900 dark:text-white pb-7 sm:pb-9  overflow-x-hidden max-w-screen-xl mx-auto ">
 
         <div>
 

@@ -69,7 +69,7 @@ const Hero_Section = () => {
 
 
     return (
-        <div className=" overflow-x-hidden pb-10 relative font-sans w-full dark:bg-gray-900 dark:text-white md:pb-16" >
+        <div className=" overflow-x-hidden pb-10 relative max-w-screen-xl mx-auto font-sans w-full dark:bg-gray-900 dark:text-white md:pb-16 ">
          
    <div className="bg-hero_bg  bg-cover bg-center h-fit  w-full mb-16">
 
@@ -118,7 +118,7 @@ const Hero_Section = () => {
 {/* crafted section */}
   <div className=" xl:flex flex-row-reverse xl:grid grid-cols-2 relative  lg:gap-2 ">
 
-    <div className="flex px-4 gap-3 justify-center md:mt-40  lg:gap-6 xxl:pt-4 xl:self-center  xxl:self-end">
+    <div className="flex px-4 gap-3 justify-center md:mt-40  lg:gap-6 xxl:pt-4 xl:self-center ">
 
       <div className="hero-imglist">
          <img src={chair_img1}></img>
@@ -136,7 +136,7 @@ const Hero_Section = () => {
    
     </div>
 
-    <div className="px-4 pt-9 font-sans text-xs gap-4 md:pt-12 md:text-lg lg:pt-16 lg:text-xl lg:px-6 xl:text-2xl xl:pt-16  xxl:pt-40  ">
+    <div className="px-4 pt-9 font-sans text-xs gap-4 md:pt-12 md:text-lg lg:pt-16 lg:text-xl lg:px-6 xl:text-2xl xl:pt-16 ">
       <h3 className=" text-xl font-bold mb-4 sm:text-2xl md:text-3xl lg:text-4xl xl:leading-normal xl:text-5xl">Crafted with excellent material </h3>
       <span className="leading-loose ">In furniture making, a variety of materials are used depending on the style, function, and durability required. Wood is one of the most common materials, with hardwoods like oak, maple, and walnut prized for their strength and aesthetic appeal, while softwoods like pine are often chosen for more affordable or lightweight options. Sustainable materials like bamboo and reclaimed wood are also becoming more popular due to their eco-friendliness.</span><br></br>
 
@@ -148,7 +148,7 @@ const Hero_Section = () => {
   {/* story-section */}
 
   <div className="mt-10 px-4 xl:flex xl:grid grid-cols-2 text-xs md:text-lg  
-      lg:text-xl lg:mt-24 xl:text-2xl xl:mt-52 md:mt-20 lg:px-7  xl:gap-10 xl:p-4 xxl:mt-64">
+      lg:text-xl lg:mt-24 xl:text-2xl xl:mt-52 md:mt-20 lg:px-7  xl:gap-10 xl:p-4 ">
     <div className='xl:px-8 xl:self-center'>
       <img src={story_img} alt="" className="h-60 w-72 sm:w-full sm:h-72 lg:h-96"/>
     </div>

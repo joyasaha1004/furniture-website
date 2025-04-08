@@ -10,8 +10,11 @@
     .products{
       @apply sm:justify-items-center
     }
+    .products img{
+      @apply md:w-60 lg:w-72
+    }
     .product-name{
-      @apply mt-5 text-center relative  xxl:justify-center
+      @apply mt-5 text-center relative  xl:justify-center
     }
   .product-name p{
     @apply text-sm leading-snug font-bold mb-4  md:text-base md:mb-3 lg:text-xl xl:mb-5 
@@ -20,7 +23,7 @@
     @apply text-sm text-gray-400 md:text-base lg:text-xl 
   }
 }
-.custom-arrow,.customprev-arrow {
+ .custom-arrow,.customprev-arrow {
     display: block;
     background: black;
     border-radius: 50%;
@@ -35,35 +38,26 @@
   .customprev-arrow{
       left: 15px;
   }
-  @media(max-width:1800px){
+   @media(max-width:3000px){
     .custom-arrow,.customprev-arrow{
       font-size: 30px;
       top: 220px;
     }
-  }
-  @media (max-width: 1610px) {
-    .custom-arrow,.customprev-arrow {
-      font-size: 45px !important;
-      top:250px;
-     width: 20px;
-      /* Medium screen size */
-    }
-    .custom-arrow{
-         right: 30px;
-    }
-    .customprev-arrow{
-        left: 25px;
-    }
-  }
+  } 
+ 
 
   @media (max-width: 1270px) {
     .custom-arrow,.customprev-arrow {
       font-size: 35px !important;
       top:220px;
-     
-      /* Medium screen size */
-    }
     
+    }
+     .custom-arrow{
+         right: 0em;
+    }
+    .customprev-arrow{
+        left: 0em;
+    }
   }
   
   @media (max-width: 1000px) {
@@ -71,7 +65,6 @@
       font-size: 25px !important;
       top:250px;
      
-      /* Medium screen size */
     }
     .custom-arrow{
          right: 25px;
@@ -85,7 +78,7 @@
     .custom-arrow,.customprev-arrow {
       font-size: 19px;
       top: 200px;
-      /* Small screen size */
+     
     }
     .custom-arrow{
          right: 15px;
@@ -99,5 +92,5 @@
     .custom-arrow,.customprev-arrow {
       font-size: 19px;
       top: 150px;
-      /* Small screen size */
-    }}
+     
+    }} 

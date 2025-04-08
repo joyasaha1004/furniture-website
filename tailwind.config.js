@@ -11,8 +11,8 @@ export default {
       sm: '300px',
       md: '500px',
       lg: '700px',
-      xl: '1000px',
-      xxl: '1500px',
+      xl: '1200px',
+      '2xl': '1800px',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],

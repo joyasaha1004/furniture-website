@@ -2,10 +2,7 @@ import React, { useRef } from 'react';
  import "./Navbar.css";
 import {useState, useEffect} from "react"
 import {  Link,NavLink } from 'react-router-dom';
-import hero from "../Pages/Hero"
-import shop from "../Pages/Shop"
-import gallery from "../Pages/Gallery"
-import contact from "../Pages/Contact"
+
 
 const Navbar = () => {
 
@@ -50,10 +47,10 @@ const Navbar = () => {
 
 
     return (
-        <div className="overflow-hidden w-full ">
+        <div className="overflow-hidden w-full max-w-screen-xl mx-auto">
 
             <div className="first-nav h-8 bg-stone-100 flex justify-between px-2
-             dark:bg-gray-800 relative items-center  lg:h-12 xl:h-16">
+             dark:bg-gray-800 relative items-center lg:h-12 xl:h-16">
                 <div className="flex gap-2 ">
                 <i class="ri-facebook-circle-line"></i>
                 <i class="ri-twitter-line"></i>
@@ -68,7 +65,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <nav className="h-8 bg-sky-600 items-center justify-between px-3  w-full text-white  flex dark:bg-sky-800 lg:h-12 xl:h-16">
+            <nav className="h-8 bg-sky-600 items-center justify-between  px-3  w-full text-white  flex dark:bg-sky-800 lg:h-12 xl:h-16">
 
                <i className="ri-menu-3-line lg:invisible " onClick={toggleMenu}></i>
 
@@ -90,7 +87,7 @@ const Navbar = () => {
 
             {isMenuOpen ? (
 
-              <div className=" bg-white w-full  py-7 transition duration-700   delay-400 dark:bg-gray-800">
+              <div className=" bg-white w-full  py-7 transition duration-700 delay-400 dark:bg-gray-800">
              
                
 
