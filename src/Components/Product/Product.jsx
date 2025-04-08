@@ -538,7 +538,7 @@ const CustomNextArrow = (props) => {
        </ul>
       </div>
 
-      <div className=" relative sm:px-10 md:px-0 lg:px-2 ">
+      <div className=" relative sm:px-2 md:px-0 lg:px-2 ">
           <Slider {...setter} ref={sliderRef} className=''>
            
                <div className="l">
