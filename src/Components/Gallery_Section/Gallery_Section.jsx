@@ -36,7 +36,7 @@ const Gallery_Section = () => (
         <h1>We<span className=""> Have</span></h1>
 
       </div>
-      <div className="pt-10 sm:pt-16 sm:px-6 md:px-[2em] lg:px-[3em] lg:pt-20">
+      <div className="pt-10 sm:pt-16 sm:px-4 md:px-[2em] lg:px-[3em] lg:pt-20">
         <div class="grid grid-cols-2 gap-3 px-2 pb-3 md:gap-6 md:pb-6 xl:gap-5">
         
           <div className="relative justify-center items-center">
