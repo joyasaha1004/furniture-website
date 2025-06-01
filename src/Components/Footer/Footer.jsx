@@ -22,22 +22,28 @@ const Footer = () => {
             <span>joyasaha440@gmail.com</span>
             </div>
             </div>
-   <div className="lg:self-center">
-            <div className="justify-self-center text-sm text-gray-400 hover: relative text-center flex mt-2 bg-white h-7 sm:h-7 md:h-8  lg:h-9">
-                <input type="text" className="text-xs px-4 w-48 text-center md:text-base lg:text-lg md:w-60 lg:w-72 xl:text-xl " placeholder="Search"></input>
-                
-                
-                <i class="ri-search-line absolute right-0 p-1 bg-black md:p-1.5 lg:p-2"></i>
-            </div>
+   <div className="justify-center lg:self-end">
+            {/* <div className="w-48 text-sm text-gray-400 relative text-center mt-2 bg-white h-7 sm:h-7 md:h-8  lg:h-9">*/}
+                {/* <input type="text" className="text-xs px-4 w-full h-full text-center md:text-base lg:text-lg md:w-60 lg:w-72 xl:text-xl " placeholder="Search"></input>  */}
+               <div className="flex relative justify-center mt-2">
+  <input 
+    type="text" 
+    className="text-xs px-4 text-center md:text-base lg:text-lg w-60 lg:w-72 xl:text-xl bg-white h-7 sm:h-8 md:h-8 lg:h-9 rounded" 
+    placeholder=" Search" 
+  />
 
-            <div className="text-xl gap-1 justify-center flex pt-2 text-white mb-2 md:text-3xl md:gap-3  lg:text-4xl lg:pt-4 ">
+ 
+    {/* <i className="ri-search-line absolute right-7 p-0.5 top-1/2 transform -translate-y-1/2 text-white bg-black"></i> */}
+  </div>
+
+            <div className="text-2xl gap-1 justify-center flex pt-2 text-white mb-2 md:text-3xl md:gap-3  lg:text-4xl lg:pt-4 ">
                 <i class="ri-facebook-circle-line"></i>
                 <i class="ri-twitter-line"></i>
                 <i class="ri-telegram-line"></i>
                 </div></div>
 </div>
                 <hr></hr>
-                <div className='justify-self-center '>
+                <div className='flex justify-center '>
                 <span className=" relative text-[10px] mb-1 text-center text-gray-400 sm:mb-4  md:mb-8 lg:text-sm xl:text-md lg:mt-2">Copyright @joya saha 2020.All right reserved</span>
         </div></div>
     );

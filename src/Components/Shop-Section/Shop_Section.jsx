@@ -1,6 +1,5 @@
 import React from 'react';
-import shop_bg from "../Assets/shop_bg.png"
-import shop_bg2 from "../Assets/shop_bg2.png"
+
 
 const Shop_Section = () => {
     return (
