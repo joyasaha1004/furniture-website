@@ -23,17 +23,14 @@ const Footer = () => {
             </div>
             </div>
    <div className="justify-center lg:self-end">
-            {/* <div className="w-48 text-sm text-gray-400 relative text-center mt-2 bg-white h-7 sm:h-7 md:h-8  lg:h-9">*/}
-                {/* <input type="text" className="text-xs px-4 w-full h-full text-center md:text-base lg:text-lg md:w-60 lg:w-72 xl:text-xl " placeholder="Search"></input>  */}
+          
                <div className="flex relative justify-center mt-2">
-  <input 
-    type="text" 
+  <input type="text" 
     className="text-xs px-4 text-center md:text-base lg:text-lg w-60 lg:w-72 xl:text-xl bg-white h-7 sm:h-8 md:h-8 lg:h-9 rounded" 
     placeholder=" Search" 
   />
 
  
-    {/* <i className="ri-search-line absolute right-7 p-0.5 top-1/2 transform -translate-y-1/2 text-white bg-black"></i> */}
   </div>
 
             <div className="text-2xl gap-1 justify-center flex pt-2 text-white mb-2 md:text-3xl md:gap-3  lg:text-4xl lg:pt-4 ">
