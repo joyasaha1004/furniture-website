@@ -220,14 +220,15 @@ const CustomerList=[{
       <div className="header ">
                     <h1 className="">Customer<span className=""> Review</span></h1>
  </div>
- <div className="mt-10 text-black sm:mt-16 md:mt-28 lg:mt-20">
+ <div className="mt-10 text-black w-full flex justify-center sm:mt-16 md:mt-28 lg:mt-20">
    <Slider ref={slider => {
           sliderRef = slider;
         }}
-        {...settings} className="mx-12 sm:mx-[5em]">
+        {...settings} className=" w-[80%] sm:w-[80%] lg:w-[80%] xl:w-[90%] gap-10 sm:px-2">
      {CustomerList.map((data)=>(
 
-       <div className="px-4 py-4 bg-gray-600 drop-shadow-lg  text-xs sm:px-3 sm:h-60 rounded-lg  md:text-sm md:px-5 md:h-64 lg:text-base lg:h-80 xl:text-lg xl:h-[19.5em] xxl:text-xl">
+   <div className="relative px-3">
+       <div className="px-4 py-4 bg-gray-600 drop-shadow-lg  text-xs sm:h-52 rounded-lg  md:text-sm md:px-5 md:h-64 lg:text-base lg:h-[17.7em] xl:text-lg xl:h-[19.5em] xxl:text-xl">
          
          
            <img src={data.img} alt="" className="w-10 h-10 rounded-full lg:w-16 lg:h-16 xl:w-20 xl:h-20"/>
@@ -249,7 +250,7 @@ const CustomerList=[{
      </div>
          </div>
      
-          </div>
+          </div></div>
      ))}
 
      

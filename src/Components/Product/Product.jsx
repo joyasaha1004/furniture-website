@@ -541,7 +541,7 @@ const CustomNextArrow = (props) => {
       <div className=" relative sm:px-2 md:px-0 lg:px-2 ">
           <Slider {...setter} ref={sliderRef} className=''>
            
-               <div className="l">
+               <div className="">
 <Slider {...settings} className="slider">
   {LampList.map((data)=>(
       
