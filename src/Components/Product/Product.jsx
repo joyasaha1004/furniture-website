@@ -538,17 +538,18 @@ const CustomNextArrow = (props) => {
        </ul>
       </div>
 
-      <div className=" relative sm:px-2 md:px-0 lg:px-2 ">
+      <div className="justify-items-center relative sm:px-2 md:px-0 lg:px-2 ">
           <Slider {...setter} ref={sliderRef} className=''>
            
-               <div className="">
-<Slider {...settings} className="slider">
+               <div className="w-full ">
+<Slider {...settings} className="slider w-[100%] ">
   {LampList.map((data)=>(
       
 
-  <div className="products px-7 py-5  ">
-    <img src={data.img} alt=""  className="h-64 sm:h-72 md:h-80 lg:h-96"/>
-
+  <div className="products ">
+    <div className='product-img'>
+    <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
+</div>
     <div className=" product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
@@ -566,9 +567,10 @@ const CustomNextArrow = (props) => {
   {ChairList.map((data)=>(
       
 
-  <div className="products  px-7 py-5  md:px-4 lg:px-20 ">
+  <div className="products ">
+    <div className='product-img'>
     <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
-
+</div>
     <div className=" product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
@@ -586,9 +588,10 @@ const CustomNextArrow = (props) => {
   {DecorList.map((data)=>(
       
 
-  <div className="products  px-7 py-5  md:px-4 lg:px-20 ">
+  <div className="products">
+    <div className='product-img'>
     <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
-
+</div>
     <div className=" product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
@@ -606,9 +609,10 @@ const CustomNextArrow = (props) => {
   {SofaList.map((data)=>(
       
 
-  <div className="products  px-7 py-5  md:px-4 lg:px-20 ">
+  <div className="products ">
+    <div className='product-img'>
     <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
-
+</div>
     <div className="product-name">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>
@@ -625,9 +629,10 @@ const CustomNextArrow = (props) => {
   {ShelfList.map((data)=>(
       
 
-  <div className="products  px-7 py-5  md:px-4 lg:px-20 ">
+  <div className="products">
+    <div className='product-img'>
     <img src={data.img} alt=""  className="h-64 md:h-80 lg:h-96"/>
-
+</div>
     <div className=" product-name">
   <p className=" ">{data.name}</p>
   <span className="">{data.price}</span>
@@ -646,9 +651,10 @@ const CustomNextArrow = (props) => {
   {TableList.map((data)=>(
       
 
-  <div className="products  px-7 py-5  md:px-4 lg:px-20 ">
+  <div className="products">
+    <div className='product-img'>
     <img src={data.img} alt="" className="h-64 md:h-80 lg:h-96"/>
-
+</div>
     <div className=" product-name lg:mt-8">
   <p className="">{data.name}</p>
   <span className="">{data.price}</span>

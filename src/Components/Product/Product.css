@@ -8,13 +8,16 @@
         @apply text-sm whitespace-nowrap font-bold hover:text-sky-500 sm:mb-4 md:text-base lg:text-xl lg:mb-8 xl:text-2xl xl:mb-12
     }
     .products{
-      @apply sm:justify-items-center
+      @apply flex justify-center px-7 py-5  md:px-6
     }
-    .products img{
-      @apply md:w-60 lg:w-72
+    .product-img{
+      @apply flex justify-center
+    }
+    .product-img img{
+      @apply w-60 md:w-[16em] lg:w-60 xl:w-[18em]
     }
     .product-name{
-      @apply mt-5 text-center relative  xl:justify-center
+      @apply mt-5 text-center relative flex flex-col justify-center
     }
   .product-name p{
     @apply text-sm leading-snug font-bold mb-4  md:text-base md:mb-3 lg:text-xl xl:mb-5 
