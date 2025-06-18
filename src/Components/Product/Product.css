@@ -10,7 +10,7 @@
     .products{
       @apply flex justify-center px-7 py-5  md:px-6
     }
-    .product-img{
+    .product_img{
       @apply flex justify-center
     }
     .product-img img{
